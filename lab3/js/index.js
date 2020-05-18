@@ -1,7 +1,7 @@
 function checkCookie() {
     let cookie = document.cookie;
     if (cookie !== "") {
-        document.location.replace("/Cookie/Task1.html");
+        document.location.replace("task1.html");
     } else {
         // alert("not find cookie");
         console.log("not found cookie");
@@ -22,7 +22,7 @@ function setCookie(value, days) {
 
 function signOut() {
     setCookie('', -1);
-    document.location.replace("/Cookie/index.html");
+    document.location.replace("index.html");
 }
 
 function addButton() {
