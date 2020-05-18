@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="CSS/main.css"/>
+    <script src="JS/task1.js"></script>
+    <script src="JS/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSLab</title>
+</head>
+
+<body onload="addButton()">
+<div class="info-class">
+    <header>
+        <ul>
+            <li>
+                <a href="Task1.html">
+                    Task 1
+                </a>
+            </li>
+            <li>
+                <a href="Task2.html">
+                    Task 2
+                </a>
+            </li>
+            <li>
+                <a href="Task3.html">
+                    Task 3
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <form id="inputForm" onsubmit="return false;">
+            <input type="text" id="x" autocomplete="off" name="X" placeholder="X" required>
+            <input type="text" id="y" autocomplete="off" name="Y" placeholder="Y" required>
+            <input type="submit" class="input-value" id="task1Btn" onclick="find()" name="inputValue" value="calculate">
+        </form>
+    </main>
+</div>
+</body>
+
+</html>

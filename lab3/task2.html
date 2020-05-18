@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="CSS/main.css" />
+    <script src="JS/task2.js"></script>
+    <script src="JS/index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSLab</title>
+</head>
+
+<body onload="addButton()">
+    <div class="info-class">
+        <header>
+            <ul>
+                <li>
+                    <a href="Task1.html">
+                        Task 1
+                    </a>
+                </li>
+                <li>
+                    <a href="Task2.html">
+                        Task 2
+                    </a>
+                </li>
+                <li>
+                    <a href="Task3.html">
+                        Task 3
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <form onsubmit="return false;">
+                <input type="text" id="N-value" autocomplete="off" name="N" placeholder="N" required>
+                <input type="submit" name="tab-func" onclick="tabFunc()" value="function tab" autocomplete="false">
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
