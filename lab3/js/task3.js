@@ -8,27 +8,25 @@ function tabFunc() {
     let tb = document.createElement("TABLE");
     tb.setAttribute("id", "myTable");
     document.body.appendChild(tb);
-    let a = 1.1728,
-        b = 0.6789,
-        c = 3.14,
-        k = 1,
-        x0 = 0.2,
-        xk = 3.01,
-        delX = 0.2;
-    for (let i = 0; i < parseInt(document.getElementById("n-value").value) && x0 <= xk; i++, x0 += delX) {
+    let a = 5.43,
+        b = 1.75,
+        p = 4,
+        s = 7,
+        x0 = 0.11,
+        xk = 4.25,
+        delX = 0.27;
+    for (let i = x0, t = 0; t < parseInt(document.getElementById("n-value").value) && i <= xk; t++, i+=delX) {
         let tr = document.createElement("TR"),
             y;
-        if (x0 < 1.8) {
-            y = Math.sqrt(a * Math.pow(x0, 2) + k) / (c * x0 + b);
-        } else if (x0 < 2.75) {
-            y = Math.pow(Math.cos(x0 / b), 2) - a * a * x0 * x0;
+        if (i <= 1.5 && i >= 0.1) {
+            y = Math.pow(i, 2.5) + p*i - s
+        } else if (i > 1.5 && i <=2.5) {
+            y = Math.exp(i) + Math.exp(Math.sqrt(i)) + Math.exp(Math.cbrt(i))
         } else {
-            y = Math.pow(Math.exp(0), (-b / x0));
-            y /= (c * x0);
-            y += Math.sin(a * x0);
+            y = i / (Math.pow(a, 2) + Math.pow(b, 1.8)) + (a / b) * Math.sin(i)
         }
         let td1 = document.createElement("TD");
-        td1.appendChild(document.createTextNode("x=" + x0.toPrecision(2)));
+        td1.appendChild(document.createTextNode("x=" + i.toPrecision(2)));
         let td2 = document.createElement("TD");
         td2.appendChild(document.createTextNode("y=" + y.toPrecision(4)));
         let td3 = document.createElement("TD");
