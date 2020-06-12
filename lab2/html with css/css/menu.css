@@ -1,0 +1,114 @@
+body {
+    background-color: #1abc9c;
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+header {
+    background-color: #16a085;
+    color: #000000;
+    text-align: center;
+    padding: 0;
+    font-family: 'Trade Winds', cursive;
+}
+
+ul {
+    overflow: hidden;
+    border: 1px solid #000000;
+    background-color: #16a085;
+    padding: 0;
+}
+
+ul li {
+    font-family: 'Oxanium', cursive;
+    background-color: inherit;
+    outline: none;
+    cursor: pointer;
+    list-style: none;
+}
+
+li {
+    width: 20%;
+}
+
+.menu {
+    font-style: normal;
+}
+
+a.menu:link {
+    transition: all 0.5s ease;
+    color: #000000;
+    text-decoration: none;
+}
+
+a.menu:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+a.menu:hover {
+    color: #00ffff;
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    border: 1px solid #000000;
+    color: #000000;
+    bottom: 0;
+    background-color: #16a085;
+    text-align: center;
+}
+
+@media screen and (min-width: 300px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        font-size: 25px;
+        margin-top: -40px;
+    }
+
+    li {
+        position: relative;
+        margin: auto;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    header {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (min-width: 1300px) {
+    body {
+        width: 1300px;
+    }
+
+    header {
+        margin-top: -40px;
+        font-size: 25px;
+    }
+
+    ul {
+        padding-top: 10px;
+        height: 50px;
+    }
+
+    li {
+        display: inline-block;
+        padding-top: 7px;
+    }
+
+    footer {
+        width: 1300px;
+    }
+}

@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Just a registry, boiii</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/menu.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/registry.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web|Trade+Winds&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Main page</a></li>
+            <li><a href="registry.html">Registry</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="audio.html">Audio</a></li>
+        </ul>
+    </header>
+    <main>
+        <h2>Registry from:</h2>
+        <form action="registered.html" method="post">
+            <fieldset>
+                <legend>Input some data:</legend>
+                <p>
+                    <label>Name here: </label>
+                    <input type="name" required id="name">
+                </p>
+
+                <p>
+                    <label>Surname here: </label>
+                    <input type="srname" required id="srname">
+                </p>
+
+                <p>
+                    <label>Mobile:</label>
+                    <input type="tel" placeholder="(XXX)-XXX-XXXX" required id="phone" name="phone">
+                </p>
+
+                <p>
+                    <label>Email:</label>
+                    <input type="email" placeholder="user@gmail.com" required id="email" name="email">
+                </p>
+
+                <p>
+                    <label>City</label>
+                    <select id="phone" name="phone">
+                        <option value="khm">Khmelnitshiy</option>
+                        <option value="lviv">Lviv</option>
+                        <option value="tokyo">Tokyo</option>
+                        <option value="london">London</option>
+                        <option value="peter">St. Petersburg</option>
+                        <option value="paris">Paris</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Gender:</label>
+                </p>
+                <p><input type="radio" value="male" checked name="gender" />Male</p>
+                <p><input type="radio" value="female" checked name="gender" />Female</p>
+                <p>
+                    <label>Birth date:</label>
+                    <input type="date" id="date" name="date">
+                </p>
+                <p>
+                    <label>Send file: </label>
+                    <input type="file" name="file">
+                </p>
+                <p>
+                    <label>Your textarea:</label>
+                    <textarea></textarea>
+                </p>
+                <p><button>Send!!!</button></p>
+            </fieldset>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>
