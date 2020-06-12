@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link href="../CSS/index.css" rel="stylesheet" type="text/css">
+    <link href="../CSS/test.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+<header></header>
+<div>
+    <form id="prospects_form">
+        <input id="phone" placeholder="Phone number" required type="text">
+<!--        <input id="year" placeholder="Year" required type="text">-->
+        <div class="radio-button-div">
+            <input class="radio-button" id="budget" type="radio" name="type" value="budget" required>
+            <label for="budget" id="budgetLabel">Hourly</label>
+            <input class="radio-button" id="contract" type="radio" name="type" value="contract" required>
+            <label for="contract" id="contractLabel">Contract</label>
+        </div>
+        <div id="result"></div>
+        <input id="send-button" type="submit" value="send">
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../JS/Animate/InitTestAnimate.js" type="module"></script>
+    <script src="../JS/Additional%20Function/masks.js" type="module"></script>
+    <script src="../JS/header.js" type="module"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+form {
+    position: relative;
+    width: 100%;
+}
+
+input[type="text"] {
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: center;
+    outline: none;
+    position: relative;
+}
+
+input[type="submit"] {
+    border: 1px solid gray;
+    color: black;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 50px;
+    display: block;
+    font-size: medium;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+
+input[type="submit"]:hover {
+    background-color: rgb(189, 189, 189);
+}
+
+@media screen and (min-width: 300px) {
+    input[type="text"] {
+        height: 60px;
+        font-size: 40px;
+        margin: 15px auto 50px;
+        width: 600px;
+    }
+
+    .radio-button-div{
+        position: relative;
+        margin: 15px auto auto;
+    }
+
+    label {
+        font-size: 40px;
+    }
+
+    input[type="radio"]{
+        margin-left: 100px;
+        height: 25px;
+    }
+
+    input[type="submit"] {
+        font-size: 40px;
+        padding: 30px 200px;
+        margin: 2% auto 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    input[type="text"] {
+        height: 40px;
+        font-size: 20px;
+        margin: 15px auto auto;
+        width: 1000px;
+    }
+
+    label {
+        font-size: 30px;
+    }
+
+    input[type="radio"]{
+        margin-left: 250px;
+        height: 17px;
+    }
+
+    input[type="submit"] {
+        font-size: 20px;
+        padding: 15px 100px;
+        margin: 1% auto 0;
+    }
+}
